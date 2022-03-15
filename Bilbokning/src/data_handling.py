@@ -197,13 +197,4 @@ def calculate_dij_mj(degree_of_filling, date):
 
     return dij, m_j
 
-#Real_zones
-#0 - Tält - Allt från tält
-#1 - Fristapling - Allt från Fristapling och Udda
-#2 - Dropzon (Trädgård+Färg) - Styck, förp och "" från Trädgård och Färg
-#3 - Dropzon (VVS&Bad+Bygg) - Styck, förp och "" från VVS & Bad och Bygg
-#4 - Dropzon (Järn) - Styck, förp och "" från Järn
-#5 - Helpall (inkl. Pushback) - Allt från Helpall samt PlockTyp == "Pall" för Trädgård, Färg, VVS & Bad, Bygg, Järn och El&Bel
-#6 - ADR - Styck, förp och "" från ADR
-#7 - Entresol (El&Bel) - Styck, Förp och "" från El&Bel
-#8 - Entresol (Styckplock) - Styckplock från Entresol (Inte El&Bel)
+
