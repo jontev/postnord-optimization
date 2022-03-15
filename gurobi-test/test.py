@@ -54,8 +54,8 @@ F = model.addConstrs(sum( u[j,t] for t in T) == 1 for j in J )
 G = model.addConstrs(sum( (t+1)*u[j,t] for t in T) <= m[j] for j in J )
 H = model.addConstrs(sum( w[p,j] for p in P ) <= 1 for j in J )
 Q = model.addConstrs(w[p,j]*dij[0,j] == x[0,p,j] for p in P for j in J )
-#R = model.addConstrs(sum( x[friplock,p,j] for p in P[20:] ) == 0 for j in J)  
-#AA = model.addConstrs(sum( x[helpall, p, j] for p in P[0:19]) == 0 for j in J )
+R = model.addConstrs(sum( x[friplock,p,j] for p in P[20:] ) == 0 for j in J)  
+AA = model.addConstrs(sum( x[helpall, p, j] for p in P[0:19]) == 0 for j in J )
 
 # Min-problem
 model.setObjective(obj, GRB.MINIMIZE)
